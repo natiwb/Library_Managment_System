@@ -1,4 +1,8 @@
-
+/**
+ * 
+ * @author Mikias Atnafu
+ *
+ */
 public class Librarian {
 
 	private String name, password, email, address, city;
