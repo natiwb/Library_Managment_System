@@ -11,7 +11,7 @@ public class Book {
 	private String ISBN;				// ISBN (International Standard Book Number)
 	private String CallNum;				// call number (books address in the library)
 	private String publisher;			// publisher of the book
-	// private static int quantity;		// number of book
+    private  int quantity;		// number of book
 	
 	
 	/**
@@ -135,5 +135,8 @@ public class Book {
 		this.publisher = publisher;
 	}
 	
+	public void addQuantity() {
+		quantity++;
+	}
 	
 }
