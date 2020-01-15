@@ -12,7 +12,15 @@ public class Book {
 	private String CallNum;				// call number (books address in the library)
 	private String publisher;			// publisher of the book
     private  int quantity;		// number of book
+	private int issued;       
 	
+	public void setIssued(int issue) {
+		this.issued = issue;
+	}
+	
+	public int getIssued() {
+		return issued;
+	}
 	
 	/**
 	 * 
@@ -136,7 +144,21 @@ public class Book {
 	}
 	
 	public void addQuantity() {
-		quantity++;
+		setQuantity(getQuantity() + 1);
+	}
+
+	/**
+	 * @return the quantity
+	 */
+	public int getQuantity() {
+		return quantity;
+	}
+
+	/**
+	 * @param quantity the quantity to set
+	 */
+	public void setQuantity(int quantity) {
+		this.quantity = quantity;
 	}
 	
 }
