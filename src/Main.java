@@ -12,10 +12,11 @@ public class Main {
 		manager.addBook(java);
 		manager.addBook(CPlusPlus);
 		manager.addBook(phyton);
-//		System.out.println(manager.viewBooks());
-//		
-		manager.view();
+		System.out.println(manager.viewBooks());
+		
+		//manager.view();
 		//System.out.println(java.toString());
+	
 	}
 	
 	
