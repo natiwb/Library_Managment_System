@@ -1,6 +1,6 @@
-import java.util.HashMap;
+
 import java.util.HashSet;
-import java.util.Map;
+
 import java.util.Set;
 
 /**
@@ -9,10 +9,10 @@ import java.util.Set;
  * 
  * @author Miki
  */
-public class LibraryManager {
-	private Set<Book> bookStore;
+public class LibraryManagmentSystem {
+	 Set<Book> bookStore;
 
-	public LibraryManager() {
+	public LibraryManagmentSystem() {
 		bookStore = new HashSet<Book>();
 	}
 
@@ -44,9 +44,23 @@ public class LibraryManager {
 	}
 	
 	public String viewBooks() {
-		// needs implementation
-		//
-		return null;
+		if(bookStore.isEmpty())
+			System.out.println("Sorry, There are no books to view");
+		StringBuilder bookView = new StringBuilder();
+		for(Book book : bookStore) {
+			bookView.append(book.toString() + "\n\n");
+		}
+		
+		return bookView.toString();
+	}
+	
+	public void view() {
+		String header = "ID \t\t TITLE  \t\t AUTHOR \t\t PUBLISHER \t\t QUANTITY";
+		System.out.println(header);
+		System.out.println("-------------------------------------------------------------------------------------------------");
+		for(Book book : bookStore) {
+			System.out.println(book.toString());
+		}
 	}
 
 }
