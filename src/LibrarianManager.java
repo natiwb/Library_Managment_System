@@ -1,4 +1,8 @@
-
+/**
+ * A librarianManager class manages the responsibility of the librarian
+ * it adds, issues, return, and view books
+ * @author Mikias
+ */
 
 import java.util.Collection;
 import java.util.HashMap;
