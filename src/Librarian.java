@@ -2,7 +2,7 @@
 public class Librarian {
 
 	private String name, password, email, address, city;
-	private long ID, contactNum;
+	private long contactNum;
 
 	/**
 	 * Construct a librarian using the specfied field
@@ -12,17 +12,14 @@ public class Librarian {
 	 * @param email      librarian email
 	 * @param address    librarian address
 	 * @param city       librarian city
-	 * @param ID         librarian address
 	 * @param contactNum librarian contact number
 	 */
-	public Librarian(String name, String password, String email, String address, String city, long ID,
-			long contactNum) {
+	public Librarian(String name, String password, String email, String address, String city,long contactNum) {
 		this.name = name;
 		this.password = password;
 		this.email = email;
 		this.address = address;
 		this.city = city;
-		this.ID = ID;
 		this.contactNum = contactNum;
 	}
 
@@ -96,19 +93,6 @@ public class Librarian {
 		this.city = city;
 	}
 
-	/**
-	 * @return the iD
-	 */
-	public long getID() {
-		return ID;
-	}
-
-	/**
-	 * @param iD the iD to set
-	 */
-	public void setID(long iD) {
-		ID = iD;
-	}
 
 	/**
 	 * @return the contactNum
@@ -122,6 +106,14 @@ public class Librarian {
 	 */
 	public void setContactNum(long contactNum) {
 		this.contactNum = contactNum;
+	}
+	
+	/*
+	 * @return 
+	 * */
+	public String toString() {
+		return "Librarian name=" + name + ", password=" + password + ", email=" + email + ", address=" + address
+				+ ", city=" + city + ", contactNum=" + contactNum ;
 	}
 
 }
